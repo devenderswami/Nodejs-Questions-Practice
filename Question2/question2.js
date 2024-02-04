@@ -15,4 +15,6 @@ function writeToFile(filePath, data) {
 
 
 filePath='test-files/output.txt'
+filePath1='test-files1/output.txt'
+writeToFile(filePath1,'This is test content')
 writeToFile(filePath,'This is test content')
