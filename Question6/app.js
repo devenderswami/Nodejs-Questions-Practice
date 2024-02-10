@@ -21,3 +21,7 @@ const port = 3000; // Choose any port you like
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+
+
+// for running it curl "http://localhost:3000/greet?name=John" in terminal
