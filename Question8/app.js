@@ -18,6 +18,7 @@ const validateNumberParam = (req, res, next) => {
     next(error);
   } else {
     next();
+    
   }
 };
 
@@ -30,6 +31,8 @@ const errorHandler = (err, req, res, next) => {
     next(err);
   }
 };
+
+
 
 // Route that throws an error if the "number" parameter is not a positive integer
 app.get('/test/:number', validateNumberParam, (req, res) => {
